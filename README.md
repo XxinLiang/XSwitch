@@ -91,19 +91,19 @@ XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
 设置了两种调用插件的方法：
 
 + 方法一 通过给```div#container```添加属性```data-XSwitch```调用，插件将会使用默认配置，如
-
+```
     <div id="container" data-XSwitch>
         ...
     </div>
-
+```
 + 方法二 通过js调用，使用这种方法可设置参数
-
+```
     <script>
     $('#container').XSwitch({
         direction: 'horizontal'
     });
     </script>
-
+```
 插件配置相关
 
     /*默认配置*/
