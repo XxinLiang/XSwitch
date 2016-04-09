@@ -90,16 +90,16 @@ XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
 
 设置了两种调用插件的方法：
 
-+ 方法一 通过给```div#container```添加属性```data-PageSwitch```调用，插件将会使用默认配置，如
++ 方法一 通过给```div#container```添加属性```data-XSwitch```调用，插件将会使用默认配置，如
 
-    <div id="container" data-PageSwitch>
+    <div id="container" data-XSwitch>
         ...
     </div>
 
 + 方法二 通过js调用，使用这种方法可设置参数
 
     <script>
-    $('#container').PageSwitch({
+    $('#container').XSwitch({
         direction: 'horizontal'
     });
     </script>
@@ -124,6 +124,10 @@ XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
         callback: '' //滑动完成后的回调函数
     }
 
-### 插件源码
+### 插件源码下载
 
-+ [源码地址](http://xxthink.com/XSwitch/js/XSwitch.js)
++ [压缩版](http://xxthink.com/XSwitch/js/XSwitch-min.js)
++ [未压缩未注释版](http://xxthink.com/XSwitch/js/XSwitch.js)
++ [详细注释版](http://xxthink.com/XSwitch/js/XSwitch-Annotation.js)
+
+- [演示DEMO地址](https://github.com/XxinLiang/XSwitch)
