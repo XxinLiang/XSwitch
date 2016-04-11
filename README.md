@@ -40,7 +40,7 @@ XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
             height: 100%;
         }
         .section {
-            /*有背景图时必须，关系到背景图能够全屏显示*/
+            /*有背景图时必须，关系到背景图能否全屏显示*/
             background-color: #000;
             background-size: cover;
             background-position: 50% 50%;
@@ -130,4 +130,4 @@ XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
 + [未压缩未注释版](http://xxthink.com/XSwitch/js/XSwitch.js)
 + [详细注释版](http://xxthink.com/XSwitch/js/XSwitch-Annotation.js)
 
-- [演示DEMO地址](https://github.com/XxinLiang/XSwitch)
+- [演示DEMO源码地址](https://github.com/XxinLiang/XSwitch)
