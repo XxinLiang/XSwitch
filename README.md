@@ -1,6 +1,6 @@
 ## XSwitch
 
-XSwitch是一个可以高度自定义的全屏滑动JQuery插件。
+XSwitch是一个可以高度自定义的全屏滑动jQuery插件。
 你可以[点击这里](http://xxthink.com/XSwitch)查看效果。
 
 ### 如何使用
