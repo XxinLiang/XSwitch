@@ -144,13 +144,12 @@
 
         function _initEvent(_this) {
 
-            _this.element.on('click', _this.selectors.page + ' li', function () {
+            _this.element.on('click touchstart', _this.selectors.page + ' li', function () {
                 _this.index = $(this).index();
                 _scrollPage(_this);
             });
 
             _this.element.on('mousewheel DOMMouseScroll', function (e) {
-
                 if (!_this.canScroll) {
                     return;
                 }
@@ -162,6 +161,27 @@
                 } else if (delta < 0 && (_this.index < (_this.pagesCount - 1) && !_this.settings.loop || _this.settings.loop)) {
                     _this.next();
                 }
+            });
+
+            _this.element.on('touchstart', function (e) {
+                
+                var startX = e.originalEvent.changedTouches[0].pageX,
+                    startY = e.originalEvent.changedTouches[0].pageY;
+                _this.element.one('touchend', function (e) {
+                    if (!_this.canScroll) {
+                        return;
+                    }
+                    var endX = e.originalEvent.changedTouches[0].pageX,
+                        endY = e.originalEvent.changedTouches[0].pageY,
+                        changeY = endY - startY;
+                    if (changeY > 50) {
+                        _this.prve();
+                    } else if (changeY < -50) {
+                        _this.next();
+                    }
+                    
+                }); 
+                e.preventDefault();
             });
 
             if (_this.settings.keyboard) {
