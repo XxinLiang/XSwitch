@@ -126,7 +126,7 @@ XSwitch是一个可以高度自定义的全屏滑动jQuery插件。
 
 ### 插件源码下载
 
-+ [压缩版](http://xxthink.com/XSwitch/js/XSwitch-min.js)
++ [压缩版](http://xxthink.com/XSwitch/js/XSwitch.min.js)
 + [未压缩未注释版](http://xxthink.com/XSwitch/js/XSwitch.js)
 + [详细注释版](http://xxthink.com/XSwitch/js/XSwitch-Annotation.js)
 + [演示DEMO源码地址](https://github.com/XxinLiang/XSwitch)
